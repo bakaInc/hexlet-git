@@ -1,4 +1,4 @@
-```index directory/working directory/repository
+#index directory/working directory/repository
 
 
 git commit INFO.md -m 'update INFO.md'   +
