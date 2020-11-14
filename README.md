@@ -1,4 +1,6 @@
 ```index directory/working directory/repository
+
+
 git commit INFO.md -m 'update INFO.md'   +
 git add .								 -
 git commit -am 'do something'		     -
@@ -20,6 +22,7 @@ git diff --staged
 git log 
 	список всех коммитов
 	--oneline сокращенный вывод
+	--graph
 git log -p
 	дополнительно выводит diff для каждого коммита
 	f - вперед, u - назад
@@ -43,6 +46,12 @@ git reset HEAD~
 git commit --amend		--поправить
 	изменение последнего локального коммита(откат в рабочий+новый коммит)
 git checkout %commit_hash%	/ %branch_name% -b create
+git switch -
+git show
+git stash   добав и восстанов идет из стека
+	working+index->stash
+	не задевает новые фаилы
+git stash pop
 linux:	
 	echo 'flush file' > README.md
 	echo 'to new line' >> INFO.md
